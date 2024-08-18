@@ -12,6 +12,10 @@
   display: flex;
 }
 
+main{
+  max-width: 1400px;
+  margin: 0 auto;
+}
 /* dark 02 */
 .text-gray {
   color: #424242;
@@ -87,14 +91,39 @@
 .banner-images {
   width: 100%;
 }
+/* section team style */
+.teams{
+  align-items: center;
+  margin-top: 130px;
+}
+.team-img-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.our-features{
+  margin-left: 130px;
+  max-width: 530px;
+}
+.feat{
+  color:#FF900E;
+}
+.of-our{
+  font-weight: 700px;
+  font-size: 2.8rem;
+}
 
 /* responsive media querry */
 
-@media (max-width: 576px) {
-
-  .nav-bar
-  .nav-links {
+@media screen and (max-width:576px) {
+  .nav-bar,
+  .nav-links,
+  .teams{
     flex-direction: column;
   }
-
+  .team-img-container{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
 }
+
